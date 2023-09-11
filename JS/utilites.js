@@ -13,3 +13,7 @@ function getInnerTextById(InnerId){
     return innerTextField;
 }
 
+function setTheAmmountById(ElementId, newValue){
+    const elementField = document.getElementById(ElementId);
+    elementField.innerText = newValue;
+}
