@@ -10,7 +10,7 @@ function getInnerTextById(InnerId){
     const innerTextField = document.getElementById(InnerId);
     const innerTextFieldString = innerTextField.innerText;
     const innerTextValue = parseFloat(innerTextFieldString);
-    return innerTextField;
+    return innerTextValue;
 }
 
 function setTheAmmountById(ElementId, newValue){

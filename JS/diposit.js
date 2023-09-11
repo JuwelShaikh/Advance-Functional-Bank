@@ -1,8 +1,11 @@
 document.getElementById('btn-dipo').addEventListener('click',function(){
     const newDipo = getInputValueById('dipo-input');
     const prevDipo = getInnerTextById('dipo-field'); 
-    const dipoTotal = prevDipo + newDipo;
+    const dipoTotal = prevDipo + newDipo
+    setTheAmmountById('dipo-field',dipoTotal);  
     
-    setTheAmmountById('dipo-field',newDipo);    
-     
+    const prevBal = getInnerTextById('balance-Field')
+    const totalBal = prevBal + newDipo;
+    setTheAmmountById('balance-Field', totalBal);
+    
 })
